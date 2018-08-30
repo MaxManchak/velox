@@ -1,0 +1,23 @@
+.first-screen {
+  padding-top: 292px;
+  background: url(../images/bg-first-screen.jpg) center no-repeat;
+  background-size: cover;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  &__description {
+    margin-bottom: 92px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: ffo;
+    line-height: 23px;
+  }
+  &__button {
+    margin-bottom: 149px;
+  }
+}
