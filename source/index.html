@@ -1,7 +1,24 @@
-//= html/header.html
+@@include("html/header.html")
 
 <main class="main">
   <div class="main__first-screen  first-screen">
+    <picture class="first-screen__layer  first-screen__layer--1">
+      <source type="image/webp" srcset="/images/bg-first-screen.webp">
+      <img src="/images/bg-first-screen.jpg" alt="firstscreen layer image">
+    </picture>
+    <picture class="first-screen__layer  first-screen__layer--2">
+      <source type="image/webp" srcset="/images/bg-first-screen-2.webp">
+      <img src="/images/bg-first-screen-2.png" alt="firstscreen layer image">
+    </picture>
+    <picture class="first-screen__layer  first-screen__layer--3">
+      <source type="image/webp" srcset="/images/bg-first-screen-3.webp">
+      <img src="/images/bg-first-screen-3.png" alt="firstscreen layer image">
+    </picture>
+    <picture class="first-screen__layer  first-screen__layer--4">
+      <source type="image/webp" srcset="/images/bg-first-screen-4.webp">
+      <img src="/images/bg-first-screen-4.png" alt="firstscreen layer image">
+    </picture>
+    
     <div class="container">
       <h1>Velox One Page Template</h1>
       <p class="first-screen__description">Clean, Responsive, customizable one page template </p>
@@ -290,4 +307,4 @@
 
 
 
-//= html/footer.html
+@@include("html/footer.html");

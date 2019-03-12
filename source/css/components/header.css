@@ -1,52 +1,53 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 24px;
-  width: 100%;
-  & .container {
-    display: flex;
-    justify-content: space-between;
-  }
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 24px;
+	width: 100%;
+	z-index: 4;
+	& .container {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .navigation {
-  & ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  & li {
-    margin-left: 60px;
-  }
-  & a {
-    position: relative;
-    color: rgba(255, 255, 255, 0.69);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: $ffo;
-    transition: all .3s;
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    &::after {
-      position: absolute;
-      bottom:8px;
-      left: 0;
-      display: block;
-      width: 0;
-      height: 2px;
-      background-color: #fff;
-      content: '';
-      transition: all .3s;
-    }
-    &:hover {
-      color: #fff;
-      &::after {
-        width: 100%;
-      }
-    }
-  }
+	& ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	& li {
+		margin-left: 60px;
+	}
+	& a {
+		position: relative;
+		color: rgba(255, 255, 255, 0.69);
+		text-decoration: none;
+		font-weight: 400;
+		font-size: 14px;
+		font-family: $ffo;
+		transition: all 0.3s;
+		display: block;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		&::after {
+			position: absolute;
+			bottom: 8px;
+			left: 0;
+			display: block;
+			width: 0;
+			height: 2px;
+			background-color: #fff;
+			content: '';
+			transition: all 0.3s;
+		}
+		&:hover {
+			color: #fff;
+			&::after {
+				width: 100%;
+			}
+		}
+	}
 }
