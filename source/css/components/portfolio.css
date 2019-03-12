@@ -13,8 +13,8 @@
 }
 
 .portfolio {
-  margin-top: 59px;
   margin-bottom: 50px;
+  margin-top: 59px;
   &__list {
     display: flex;
     list-style: none;
@@ -33,17 +33,18 @@
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
-      transition: all .3s;
+      transition: all 0.3s;
       &::after {
         content: '';
         display: block;
         background-color: #00a5ff;
         height: 1px;
         width: 0;
-        transition: all .3s;
+        transition: all 0.3s;
         margin-top: 6px;
       }
-      &:hover, &.active {
+      &:hover,
+      &.active {
         color: #00a5ff;
         &::after {
           width: 100%;
@@ -60,7 +61,6 @@
     margin: 0;
   }
   &__tab {
-
     display: none;
     width: 100%;
     &.active {
@@ -74,7 +74,7 @@
 .tab {
   width: 32%;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
-  transition: all .3s;
+  transition: all 0.3s;
   margin-bottom: 15px;
   &:hover {
     box-shadow: 0 2px 5px 1px rgba(0, 165, 255, 0.35);
@@ -101,6 +101,6 @@
     font-size: 18px;
     font-weight: 600;
     padding: 29px 32px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 }
